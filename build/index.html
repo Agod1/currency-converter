@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Currency Converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css">        
+    </head>
+    <body>
+        <h1>Currency Converter</h1>
+        <div class="results">
+            <div class="statement">
+                <p class="base">
+                    <span id="statement_base_amount">3,597.80</span>
+                    <span id="statement_base_currency">Nigerian Naira</span> equals 
+                </p>
+                <p class="result">
+                    <span id="statement_result_amount">3,597.80</span>
+                    <span id="statement_result_currency">Nigerian Naira</span>
+                </p>
+            </div>
+            <div class="activities">
+                <div class="activity activity_input">
+                    <input id="activity_base_amount" type="number" value="0.00" min="0">
+                    <select id="activity_base_currency"></select>
+                    <input id="activity_result_amount" type="number" value="0.00" min="0">
+                    <select id="activity_result_currency"></select>
+                </div>
+                <div class="activity activity_graph" id="activity_graph">
+                    History Graph
+                </div>
+            </div>
+        </div>
+        <p class="message" id="message">Working offline</p>
+
+        <script src="bundle.js" charset="utf-8"></script>
+      </body>
+</html>
